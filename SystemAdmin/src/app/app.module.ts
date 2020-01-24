@@ -14,7 +14,7 @@ import { DashboardModule } from './dashboard/dashboard.module';
     LoginModule,
     DashboardModule,
     RouterModule.forRoot([
-    {}
+      { path: 'login', component: LoginModule}
     ])
   ],
   providers: [],
