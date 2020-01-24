@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { LoginModule } from './login/login.module';
 import { RouterModule } from '@angular/router';
-import { LoginComponent } from './login/login.component';
+import { DashboardModule } from './dashboard/dashboard.module';
 
 @NgModule({
   declarations: [
@@ -12,9 +12,9 @@ import { LoginComponent } from './login/login.component';
   imports: [
     BrowserModule,
     LoginModule,
+    DashboardModule,
     RouterModule.forRoot([
-      {path: 'login', component: LoginComponent},
-      {path: '', redirectTo: 'login', pathMatch: 'full'}
+    {}
     ])
   ],
   providers: [],
