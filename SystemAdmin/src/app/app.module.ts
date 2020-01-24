@@ -1,9 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { LoginModule } from './login/login.module';
-import { RouterModule } from '@angular/router';
-import { DashboardModule } from './dashboard/dashboard.module';
+import { RoutingModule } from './routing.module';
+
 
 @NgModule({
   declarations: [
@@ -11,11 +10,7 @@ import { DashboardModule } from './dashboard/dashboard.module';
   ],
   imports: [
     BrowserModule,
-    LoginModule,
-    DashboardModule,
-    RouterModule.forRoot([
-      { path: 'login', component: LoginModule}
-    ])
+    RoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
